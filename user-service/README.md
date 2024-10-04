@@ -1,25 +1,49 @@
-# User Service
+# 👤 User Service
 
-## Overview
+## 🚀 Overview
 
-The User Service is responsible for handling user registration, authentication, and profile management. It uses **JWT** (JSON Web Token) for authentication and **MongoDB** as the database for storing user information. Passwords are securely hashed using bcrypt with a salt of 10 to ensure user data is protected.
+The **User Service** is responsible for handling **user registration**, **authentication**, and **profile management**. It uses **JWT** (JSON Web Token) for secure authentication and **MongoDB** as the database for storing user information. Passwords are securely hashed using **bcrypt** with a salt of 10 to ensure user data is well-protected 🔐.
 
-## Technologies Used
+---
 
-- **Node.js**: JavaScript runtime for building server-side applications.
-- **Express.js**: Fast, unopinionated, minimalist web framework for Node.js.
-- **MongoDB**: NoSQL database for storing user data.
-- **JWT**: Used for authenticating users with tokens.
-- **bcrypt.js**: For hashing and salting passwords.
+## 🛠️ Technologies Used
 
-## Features
+| Technology   | Purpose                                                  |
+|--------------|----------------------------------------------------------|
+| **Node.js**  | JavaScript runtime for building server-side applications.|
+| **Express.js**| Web framework for creating APIs and handling requests.  |
+| **MongoDB**  | NoSQL database for storing user data.                    |
+| **JWT**      | Used for authenticating users with secure tokens.        |
+| **bcrypt.js**| For hashing and salting passwords securely.              |
 
-- **User Registration**: Create a new user with securely hashed passwords.
-- **User Authentication**: Authenticate users using JWT and retrieve tokens for protected routes.
-- **Profile Management**: Update user profile details securely.
-- **Password Security**: Hashing and salting are used for securing passwords during registration and authentication.
+---
 
-## Installation
+## 🌟 Features
+
+- 🔑 **User Registration**: 
+  - Allows new users to sign up with securely hashed passwords.
+  
+- 🔐 **User Authentication**:
+  - Users can log in using **JWT** and receive a token for accessing protected routes.
+  
+- 👤 **Profile Management**:
+  - Users can update their profile information securely.
+
+- 🛡️ **Password Security**:
+  - Passwords are hashed and salted using **bcrypt** for extra security during registration and authentication.
+
+---
+
+## ⚙️ Installation
+
+To set up the **User Service** locally, follow the steps below:
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/microservices.git
+cd user-service
+```
 
 ### Step 1: Clone the Repository
 
@@ -48,6 +72,16 @@ npm install
 
 - cd src
 - nodemon server.js
+
+## 🔄 API Endpoints
+
+| 🌐 **HTTP Method** | 🛣️ **Endpoint**         | 📄 **Description**                        |
+|--------------------|-------------------------|-------------------------------------------|
+| **POST**           | `/register`             | 📝 Register a new user                    |
+| **POST**           | `/login`                | 🔑 Log in a user and get a token          |
+| **GET**            | `/profile`              | 👤 Get user profile (🔒 Auth required)    |
+| **PUT**            | `/profile/update`       | ✏️ Update user profile (🔒 Auth required) |
+
 
 # API Endpoints
 
