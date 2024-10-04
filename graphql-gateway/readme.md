@@ -1,25 +1,26 @@
-# GraphQL Gateway
+# 🌉 GraphQL Gateway
 
-## Overview
+## Overview 🔍
 
 The GraphQL Gateway serves as the entry point for all client requests, consolidating data from multiple microservices (User Service, Product Service, and Order Service) into a unified API. This service facilitates efficient data retrieval and management through GraphQL queries and mutations, providing a seamless experience for clients.
 
-## Technologies Used
-- **Node.js**: JavaScript runtime for building server-side applications.
-- **Apollo Server**: A community-driven, open-source GraphQL server for Node.js.
-- **Express.js**: Web framework for handling routing and API creation.
-- **REST APIs**: Communicates with the underlying microservices.
+## Technologies Used 🛠️
+- **Node.js**: JavaScript runtime for building server-side applications. 🖥️
+- **Apollo Server**: A community-driven, open-source GraphQL server for Node.js. 🚀
+- **Express.js**: Web framework for handling routing and API creation. 📦
+- **REST APIs**: Communicates with the underlying microservices. 🔗
 
-## Installation
 
-### Step 1: Clone the Repository
+## Installation ⚙️
+
+### Step 1: Clone the Repository 🐙
 
 ```bash
 git clone https://github.com/himanshuParashar0101/Microservices/tree/main/graphql-gateway
 cd microservices/graphql-gateway
 ```
 
-### Step 2: Install Dependencies
+### Step 2: Install Dependencies 📦
 
 To install the required dependencies, run the following command:
 
@@ -27,7 +28,7 @@ To install the required dependencies, run the following command:
 npm install
 ```
 
-### Step 4: Run the Application
+### Step 4: Run the Application 🚀
 
 To start the server, run the following command:
 
@@ -36,7 +37,8 @@ cd src
 nodemon app.js
 ```
 
-## API Endpoints
+## API Endpoints  📡
+
 
 ### Queries
 
@@ -48,6 +50,8 @@ nodemon app.js
 | `product(id: ID!)`          | Retrieves a product by ID             | ```graphql query { product(id: "product-id") { id name price stock } } ```                    |
 | `orders`                     | Retrieves all orders                  | ```graphql query { orders { id userId totalAmount } } ```                                     |
 | `order(id: ID!)`            | Retrieves an order by ID              | ```graphql query { order(id: "order-id") { id userId totalAmount products { productId quantity } } } ``` |
+
+
 
 ### Mutations
 
