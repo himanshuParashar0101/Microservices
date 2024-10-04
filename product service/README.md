@@ -69,6 +69,7 @@ Creates a new product.
   "stock": 50
 }
 ```
+
 ### Response
 
 - **201 Created**
