@@ -68,9 +68,11 @@ Creates a new product.
   "price": 100.0,
   "stock": 50
 }
-
+```
 ### Response
+
 - **201 Created**
+
 ```json
 {
   "message": "Product created successfully",
