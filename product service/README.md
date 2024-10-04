@@ -114,7 +114,7 @@ Updates the inventory of a product.
   "product": {
     "id": "prod-001",
     "name": "Sample Product",
-    "stock": 70  // Adjusted stock
+    "stock": 70
   }
 }
 ```
