@@ -138,7 +138,7 @@ The order data is stored in MongoDB with the following schema:
       "quantity": "number"
     }
   ],
-  "status": "string", // Enum: ['pending', 'shipped', 'delivered']
+  "status": "string",
   "totalAmount": "number",
   "createdAt": "date",
   "updatedAt": "date"
